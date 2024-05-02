@@ -43,6 +43,8 @@ function handleSubmit(event) {
           position: 'topRight',
         });
       }
+
+      gallery.innerHTML = '';
       gallery.innerHTML = createGalleryMarkup(data.hits);
       simpleLightbox();
     })
